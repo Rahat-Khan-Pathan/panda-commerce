@@ -25,9 +25,13 @@ input[type=search] {
     font-weight: 500;
     line-height: 140%;
     color: #707070;
+    text-align: center;
 }
 .search {
     width: 100%;
+}
+.search input::placeholder {
+    color: #CCCCCC;
 }
 .links {
     width: 100%;
@@ -60,10 +64,10 @@ input[type=search] {
     border-radius: 15px;
 }
 .item-text {
-    width: 35%;
+    width: 40%;
 }
 .item-img {
-    width: 30%;
+    width: 35%;
 }
 .item-text h1 {
     font-size: 2rem;
@@ -71,7 +75,7 @@ input[type=search] {
     margin-bottom: 1em;
 }
 .item-text p {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
     text-align: justify;
@@ -89,7 +93,7 @@ input[type=search] {
     background: linear-gradient(180deg, #FF589B, #FF136F);
     border-radius: 6px;
     color: white;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 500;
 }
 .item-text a:hover {
@@ -115,6 +119,8 @@ input[type=search] {
 }
 .catagories-container h1 {
     margin-bottom: 40px;
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 .catagories {
     display: grid;
@@ -146,6 +152,7 @@ input[type=search] {
 .catagories h2 {
     font-weight: 500;
     color: white;
+    font-size: 2rem;
 }
 
 main {
@@ -164,12 +171,17 @@ main {
     color: #FF9D00;
     font-size: 1rem;
     font-weight: 500;
+    margin: 0;
+}
+.shoes-text h1, .bags-text h1 {
+    font-weight: 700;
+    font-size: 1.8rem;
 }
 .card {
     border-radius: 20px !important;
 }
 .card-title {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 15px !important;
     color: #1F1F1F;
@@ -178,6 +190,7 @@ main {
     text-align: center;
     color: #4E4E4E;
     font-weight: 400;
+    font-size: 1rem;
 }
 .card-body h3 {
     font-size: 1.25rem;
@@ -187,6 +200,7 @@ main {
 .card-body a {
     text-decoration: none;
     font-size: 1rem;
+    font-weight: 600;
     color: white;
     background: black;
     padding: 10px 20px;
@@ -195,6 +209,58 @@ main {
 .card-body a:hover {
     color: white;
 }
+
+.footer-container {
+    background-color: #FFF2F1;
+}
+footer {
+    background-color: white;
+    padding-top: 70px;
+}
+.stay-box {
+    padding: 150px 0;
+}
+.stay-box h2 {
+    font-size: 1.5rem;
+    font-weight: 650;
+    text-align: center;
+}
+.stay-box p {
+    color: #707070;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+}
+.stay-box input {
+    background-color: white;
+    border: white;
+    width: 20rem;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    text-align: left;
+    color: black;
+}
+.stay-box input::placeholder {
+    color: #CCCCCC;
+}
+.stay-box button {
+    background: linear-gradient(180deg, #FF589B, #FF136F);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+}
+footer p {
+    margin-top: 70px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: dimgray;
+    text-align: center;
+}
+
 @media only screen and (max-width: 991px) {
     .search {
         width: 90%;
@@ -209,17 +275,23 @@ main {
     .navbar-brand {
         margin-right: 0px !important;
     }
+    .item-text {
+        width: 50%;
+    }
     .item-text h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
     .item-text p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
     .item-text h2 {
         font-size: 1.3rem;;
     }
     .item-text a {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
+    }
+    .catagories h2 {
+        font-size: 1.5rem;
     }
 }
 @media only screen and (max-width:767px) {
@@ -227,7 +299,7 @@ main {
         flex-direction: column;
     }
     .item-text {
-        width: 80%;
+        width: 90%;
         margin-bottom: 30px;
     }
     .item-img {
@@ -240,6 +312,21 @@ main {
         margin-bottom: 15px;
     }
     .catagories img {
-        width: 25%;
+        width: 15%;
+    }
+    .stay-box h1 {
+        font-size: 0.7rem;
+    }
+    .stay-box p {
+        font-size: 0.7rem;
+    }
+    .stay-box input {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .email-form {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
     }
 }
