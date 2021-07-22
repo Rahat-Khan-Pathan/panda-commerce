@@ -20,7 +20,7 @@ header {
     width: 130px;
 }
 input[type=search] {
-    background-image: url("/images/search.png");
+    background-image: url("images/search.png");
     background-repeat: no-repeat;
     background-position: 95%;
     background-color: #F1F1F1 !important;
