@@ -252,7 +252,7 @@ footer {
     font-weight: 600;
     border-radius: 5px;
 }
-footer p {
+.credit {
     margin-top: 70px;
     font-size: 16px;
     font-weight: 400;
@@ -328,5 +328,17 @@ footer p {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
+    }
+    .credit {
+        font-size: 10px;
+    }
+    .stay-box h2 {
+        font-size: 1.3rem;
+    }
+    .stay-box p {
+        font-size: 0.7rem;
+    }
+    .stay-box button {
+        font-size: 12px;
     }
 }
