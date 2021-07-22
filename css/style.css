@@ -1,21 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-
-/* Navigation Bar Custom Styles  */
-.nav-container {
-    max-width: 70%;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
-.navbar {
-    margin-top: 20px;
+/* Navigation Bar Custom Styles  */
+header {
+    padding-top: 20px;
+    background-color: white;
 }
 .navbar-brand {
-    margin-right: 50px;
-    width: 125px;
-    margin-right: 100%;
+    width: 130px;
 }
 input[type=search] {
     background-image: url("/images/search.png");
     background-repeat: no-repeat;
-    background-position: 97%;
+    background-position: 95%;
     background-color: #F1F1F1 !important;
     padding-left: 20px;
 } 
@@ -26,13 +27,13 @@ input[type=search] {
     color: #707070;
 }
 .search {
-    width: 40%;
+    width: 100%;
 }
 .links {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-} 
+}   
 .nav-link::after {
     content: '';
 	width: 0%;
@@ -45,6 +46,155 @@ input[type=search] {
     width: 100%;
     transition: 0.3s;
 }
+.navbar-toggler-icon {
+    font-size: 15px;
+}
+
+/* Carousel Custom Styles  */
+.carousel-container {
+    margin-bottom: 65px;
+}
+.carousel {
+    background-color: #FEEAE9;
+    margin-top: 60px;
+    border-radius: 15px;
+}
+.item-text {
+    width: 35%;
+}
+.item-img {
+    width: 30%;
+}
+.item-text h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.item-text p {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+.item-text h2 {
+    color: #FF136F;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.2em;
+}
+.item-text a {
+    text-align: center;
+    text-decoration: none;
+    padding: 13px 20px;
+    background: linear-gradient(180deg, #FF589B, #FF136F);
+    border-radius: 6px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.item-text a:hover {
+    color: white;
+    background: linear-gradient(180deg,#FF136F , #FF589B);
+}
+.carousel-control-prev {
+    width: 40px !important;
+    justify-content: flex-start !important;
+}
+.carousel-control-next {
+    width: 40px !important;
+    justify-content: flex-end !important;
+}
+.inner {
+    padding: 2em 0;
+    justify-content: center;
+    align-items: center;
+}
+.catagories-container {
+    margin-bottom: 40px;
+    padding: 0 40px !important;
+}
+.catagories-container h1 {
+    margin-bottom: 40px;
+}
+.catagories {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25px;
+    padding: 24px 0px;
+    padding-top: 0;
+}
+.watch, .bag, .shoes {
+    background-color: red;
+    width: 100%;
+    justify-content: space-around;
+    padding: 15px 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.watch {
+    background: linear-gradient(180deg, #FF9C35, #FFD019);
+}
+.bag {
+    background: linear-gradient(180deg, #FF589B, #FF136F);
+}
+.shoes {
+    background: linear-gradient(180deg, #4289FF, #3F07F8);
+}
+.catagories img {
+    width: 30%;
+}
+.catagories h2 {
+    font-weight: 500;
+    color: white;
+}
+
+main {
+    background-color: #F4F4F4;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+.shoes-container, .bags-container {
+    padding: 0 40px !important;
+    margin-bottom: 100px;
+}
+.shoes-text, .bags-text{
+    margin-bottom: 25px;
+}
+.shoes-text p,.bags-text p {
+    color: #FF9D00;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.card {
+    border-radius: 20px !important;
+}
+.card-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 15px !important;
+    color: #1F1F1F;
+}
+.card-text {
+    text-align: center;
+    color: #4E4E4E;
+    font-weight: 400;
+}
+.card-body h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.card-body a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.card-body a:hover {
+    color: white;
+}
 @media only screen and (max-width: 991px) {
     .search {
         width: 90%;
@@ -53,11 +203,43 @@ input[type=search] {
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .nav-item {
-        display: block;
-        margin: auto;
+    .links {
+        justify-content: center;
     }
-    .navbar-toggler-icon {
-        font-size: 15px;
+    .navbar-brand {
+        margin-right: 0px !important;
+    }
+    .item-text h1 {
+        font-size: 1.5rem;
+    }
+    .item-text p {
+        font-size: 0.7rem;
+    }
+    .item-text h2 {
+        font-size: 1.3rem;;
+    }
+    .item-text a {
+        font-size: 0.5rem;
+    }
+}
+@media only screen and (max-width:767px) {
+    .inner {
+        flex-direction: column;
+    }
+    .item-text {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .item-img {
+        width: 60%;
+    }
+    .catagories {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .watch, .bag, .shoes {
+        margin-bottom: 15px;
+    }
+    .catagories img {
+        width: 25%;
     }
 }
