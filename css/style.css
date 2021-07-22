@@ -1,0 +1,63 @@
+
+
+/* Navigation Bar Custom Styles  */
+.nav-container {
+    max-width: 70%;
+}
+.navbar {
+    margin-top: 20px;
+}
+.navbar-brand {
+    margin-right: 50px;
+    width: 125px;
+    margin-right: 100%;
+}
+input[type=search] {
+    background-image: url("/images/search.png");
+    background-repeat: no-repeat;
+    background-position: 97%;
+    background-color: #F1F1F1 !important;
+    padding-left: 20px;
+} 
+.nav-link {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 140%;
+    color: #707070;
+}
+.search {
+    width: 40%;
+}
+.links {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+} 
+.nav-link::after {
+    content: '';
+	width: 0%;
+	height: 3px;
+	background-color: orangered;
+	display: block;
+	margin: auto;
+}
+.nav-item :hover::after {
+    width: 100%;
+    transition: 0.3s;
+}
+@media only screen and (max-width: 991px) {
+    .search {
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .nav-item {
+        display: block;
+        margin: auto;
+    }
+    .navbar-toggler-icon {
+        font-size: 15px;
+    }
+}
