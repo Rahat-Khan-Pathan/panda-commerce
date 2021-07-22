@@ -10,6 +10,12 @@ header {
     padding-top: 20px;
     background-color: white;
 }
+.navbar{
+    background-color: white;
+}
+.nav-container {
+    padding-top: 5px;
+}
 .navbar-brand {
     width: 130px;
 }
@@ -57,6 +63,7 @@ input[type=search] {
 /* Carousel Custom Styles  */
 .carousel-container {
     margin-bottom: 65px;
+    margin-top: 100px;
 }
 .carousel {
     background-color: #FEEAE9;
